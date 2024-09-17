@@ -1,0 +1,62 @@
+body {
+    font-family:"Arial",same-serif;
+    background-color: #0D1117;
+    color: #C9D1D9
+}
+
+h1{
+
+    color: red;
+
+
+}
+/* Attribute Selector*/
+a{
+    color:aquamarine;
+    text-decoration: none;
+}
+a:hover{
+    color:fuchsia
+}
+   /* Child Selector*/ 
+   ul>li{
+    font-weight:bold;
+   }
+
+   /*  Sibling selector*/
+   h1 + p{
+    background-color:honeydew;
+    padding:10px;
+    border: radius 5px;
+   }
+
+   /*:hover Psuedo-class*/
+   ul li:hover{
+    color:navajowhite
+   }
+
+   /*:nth-child(n) Psuedo-class*/
+   ul li:nth-child{3} {
+    backgorund-color: green;
+   }
+
+   /* :not(selector) Psuedo-class*/
+   p:not(:first-of-type) {
+   text-decoration:underline;
+}
+
+/*:: before psuedo-element*/
+ul li::before{
+    content:"🇳🇬";
+}
+
+/*::after psuedo-element*/
+a::after{
+    content:"🥶";
+}
+
+/* ::first-letter Psuedo-element*/
+p::first-letter{
+    font-size:200%
+    color: #FF7882;
+}
